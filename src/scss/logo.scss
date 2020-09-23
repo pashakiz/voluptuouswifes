@@ -1,0 +1,21 @@
+.logo {
+  width: 216px;
+  height: 27px;
+  background-image: url('../img/icons/logo.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  @media (min-width: 992px) {
+    width: 407px;
+    height: 53px;
+  }
+}
+
+.logo_main {
+  width: 254px;
+  height: 33px;
+  background-image: url('../img/icons/logo-white.svg');
+  @media (min-width: 992px) {
+    width: 407px;
+    height: 53px;
+  }
+}

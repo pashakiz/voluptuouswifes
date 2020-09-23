@@ -1,0 +1,36 @@
+.footer {
+  background-color: $btn_bg_color;
+  a.footer__link {
+    font-family: $font_family2;
+    font-weight: 400;
+    color: $footer_text_color;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  a.footer__link:hover {
+    color: $footer_text_color_hover;
+    text-decoration: none;
+  }
+  a.footer__link + a.footer__link {
+    margin-top: 37px;
+  }
+  @media (min-width: 992px) {
+    a.footer__link {
+      font-size: 15px;
+      line-height: 19px;
+    }
+    a.footer__link + a.footer__link {
+      margin-left: 160px;
+      margin-top: 0;
+    }
+  }
+}
+
+.footer__bottom {
+  padding: 57px 0;
+  @media (min-width: 992px) {
+    padding: 46px 0;
+  }
+}
+
