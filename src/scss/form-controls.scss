@@ -408,20 +408,6 @@ textarea.form-control {
   position: relative;
   letter-spacing: 1px;
   line-height: 1;
-  &::after {
-    display: block;
-    content: '';
-    width: 62px;
-    height: 62px;
-    background-color: inherit;
-    background-image: url('../img/icons/icon-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 30%;
-    position: absolute;
-    right: -72px;
-    top: -1px;
-  }
   &:hover {
     color: #fff;
     background-color: $btn_hover_bg_color;
@@ -439,39 +425,20 @@ textarea.form-control {
     font-size: 30px;
     padding: 31px 40px;
     height: 94px;
-    &::after {
-      width: 94px;
-      height: 94px;
-      right: -105px;
-    }
   }
   &.btn_1 {
-    width: calc(100% - 71px);
     @media (min-width: 992px) {
-      width: calc(100% - 71px);
       font-size: 20px;
       padding: 20px 21px;
       height: 62px;
-      &::after {
-        width: 62px;
-        height: 62px;
-        right: -72px;
-      }
     }
     @media (min-width: 1920px) {
-      width: calc(100% - 104px);
       font-size: 30px;
       padding: 31px 40px;
       height: 94px;
-      &::after {
-        width: 94px;
-        height: 94px;
-        right: -105px;
-      }
     }
   }
   &.btn_2 {
-    width: calc(100% - 28px);
     font-size: 11px;
     padding: 8px 10px 6px;
     height: 25px;
@@ -487,16 +454,10 @@ textarea.form-control {
       letter-spacing: 2px;
     }
     @media (min-width: 992px) {
-      width: calc(100% - 71px);
       font-size: 21px;
       letter-spacing: 3px;
       padding: 20px 21px;
       height: 62px;
-      &::after {
-        width: 62px;
-        height: 62px;
-        right: -72px;
-      }
     }
   }
   &.btn_3 {
@@ -505,9 +466,6 @@ textarea.form-control {
     font-size: 17px;
     height: 40px;
     color: $input_txt_color;
-    &::before, &::after {
-      display: none;
-    }
     &:hover {
       color: #fff;
       background-color: $btn2_hover_bg_color;
@@ -519,12 +477,6 @@ textarea.form-control {
     }
   }
   &.btn_w100 {
-    width: calc(100% - 71px);
-    @media (min-width: 992px) {
-      width: calc(100% - 104px);
-    }
-  }
-  &.btn_w100i {
     width: 100%;
   }
 }
