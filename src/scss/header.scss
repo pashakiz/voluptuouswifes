@@ -1,18 +1,18 @@
 .header {
   .notice {
-    border: 1px solid #CEC8BF;
     display: inline-block;
-    border-radius: 0;
-    color: $input_txt_color;
-    font-size: 13px;
-    font-family: $font_family2;
-    font-weight: 400;
-    padding: 6px 12px;
+    border-radius: 0 20px;
+    background-color: $btn_bg_color;
+    color: $body_bg_color;
+    font-size: 15px;
+    font-family: $font_family;
+    font-weight: 300;
+    padding: 6px 13px;
     line-height: 1;
     text-align: center;
     @media (min-width: 992px) {
-      font-size: 18px;
-      padding: 10px 20px;
+      font-size: 22px;
+      padding: 10px 20px 12px;
     }
   }
   &.expand {
@@ -74,31 +74,31 @@
   }
 }
 .header_page {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   @media (min-width: 768px) {
-    margin-bottom: 61px;
+    margin-bottom: 60px;
   }
   @media (min-width: 992px) {
     margin-bottom: 90px;
   }
   @media (min-width: 1920px) {
-    margin-bottom: 130px;
+    margin-bottom: 120px;
   }
 }
 
 .header__row {
-  padding: 22px 0 0;
+  padding: 24px 0 0;
   @media (min-width: 992px) {
-    padding: 74px 0 0;
+    padding: 78px 0 0;
   }
   @media (min-width: 1200px) {
-    padding: 74px 0 0;
+    padding: 78px 0 0;
   }
   @media (min-width: 1350px) {
-    padding: 74px 0 0;
+    padding: 78px 0 0;
   }
   @media (min-width: 1400px) {
-    padding: 74px 0 0;
+    padding: 78px 0 0;
   }
   &.header__row_main {
     @media (min-width: 1200px) {
@@ -157,7 +157,7 @@
     display: block;
   }
   .notice {
-    margin-left: 14px;
+    margin-left: 12px;
     position: relative;
     top: -2px;
     @media (min-width: 992px) {
@@ -166,21 +166,18 @@
   }
   .header__userinfo-text,
   a.header__userinfo-text {
-    font-family: $font_family2;
-    font-weight: 300;
-    font-size: 16px;
-    color: $input_txt_color;
+    font-family: $font_family;
+    font-weight: 500;
+    font-size: 18px;
+    color: $font_color;
     text-decoration: none;
     word-break: break-all;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     @media (min-width: 992px) {
-      font-size: 25px;
+      font-size: 28px;
     }
     &:hover {
       .notice {
-        background-color: $btn_bg_color;
-        color: #fff;
+        background-color: $btn_hover_bg_color;
       }
     }
   }
@@ -192,31 +189,28 @@
   }
 }
 .header-menu__wrap {
-  padding-top: 36px;
-  padding-bottom: 28px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .header-menu__item {
-  padding: 16px 0 21px;
+  padding: 17px 0;
   &:hover {
     text-decoration: none;
     .notice {
-      background-color: $btn_bg_color;
-      color: #fff;
+      background-color: $btn_hover_bg_color;
     }
   }
 }
 .header-menu__item-text {
-  font-family: $font_family2;
-  font-weight: 300;
-  font-size: 16px;
-  color: $input_txt_color;
+  font-family: $font_family;
+  font-weight: 500;
+  font-size: 18px;
+  color: $font_color;
   text-decoration: none;
   word-break: break-all;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding-right: 12px;
+  padding-right: 8px;
   @media (min-width: 768px) {
-    font-size: 25px;
+    font-size: 28px;
   }
 }
 

@@ -1,36 +1,35 @@
 .footer {
-  background-color: $btn_bg_color;
+  background-color: $bg_dark_1;
   a.footer__link {
     font-family: $font_family2;
     font-weight: 400;
     color: $footer_text_color;
-    font-size: 13px;
-    line-height: 16px;
-    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
   }
   a.footer__link:hover {
     color: $footer_text_color_hover;
     text-decoration: none;
   }
   a.footer__link + a.footer__link {
-    margin-top: 37px;
+    margin-top: 38px;
   }
   @media (min-width: 992px) {
     a.footer__link {
-      font-size: 15px;
-      line-height: 19px;
+      font-size: 17px;
+      line-height: 20px;
     }
     a.footer__link + a.footer__link {
-      margin-left: 160px;
+      margin-left: 155px;
       margin-top: 0;
     }
   }
 }
 
 .footer__bottom {
-  padding: 57px 0;
+  padding: 55px 0 52px;
   @media (min-width: 992px) {
-    padding: 46px 0;
+    padding: 46px 0 37px;
   }
 }
 

@@ -1,34 +1,34 @@
-/**/$container-xxl:             1427px;
-/**/$container-xxxl:            1640px;
-/**/$body_bg_color:             #FFF7EB;
-/**/$logo_main_color:           #D3B7D6; /**/
-/**/$btn_bg_color:              #FF445A;
-/**/$btn_hover_bg_color:        #EA2F45;
+$container-xxl:             1320px;
+$container-xxxl:            1320px;
+$body_bg_color:             #F4F0EC;
+$logo_main_color:           #EFA4B8;
+$btn_bg_color:              #EFA4B8;
+$btn_hover_bg_color:        #F985A4;
 /**/$btn2_bg_color:             #E9E0D3;
 /**/$btn2_hover_bg_color:       #FF445A;
-/**/$bg_dark_1:                 #E9E0D3;
-/**/$bg_light_1:                #F5EEE4;
+$bg_dark_1:                 #264844;
+$bg_light_1:                #EFE7E7;
+$bg_light_2:                #E8E2DC;
 $font_color:                #264844;
-/**/$font_color2:               #272727;
+$font_color2:               #272727;
 $font_family:               "SofiaPro", sans-serif;
 $font_weight:               300;
 $font_size:                 19px;
 $font_size_mobile:          16px;
-/**/$body_mb:                   140px;
-/**/$body_mb_mob:               100px;
-/**/$font_family2:              "IvyMode", serif;
-/**/$font_family3:              "Love", serif;
+$body_mb:                   150px;
+$body_mb_mob:               90px;
+$font_family2:              "RaisonnePro", serif;
 /**/$link_txt_family:           $font_family;
-/**/$link_color:                #828282;/**/
-/**/$link_hover_color:          #555555;/**/
+/**/$link_color:                #828282;
+/**/$link_hover_color:          #555555;
 /**/$link2_color:               #272727;
 /**/$link2_hover_color:         $link2_color;
 /**/$link3_color:               $font_color2;
 /**/$link3_hover_color:         #CEB3A6;
-/**/$footer_height:             111px;
-/**/$footer_height_mob:         236px;
-/**/$footer_text_color:         #FFF7EB;
-/**/$footer_text_color_hover:   rgba(255,247,235,0.7);
+$footer_height:             103px;
+$footer_height_mob:         236px;
+$footer_text_color:         $body_bg_color;
+$footer_text_color_hover:   #319E91;
 
 //Form
 /**/$input_bg:                  transparent;
@@ -113,6 +113,6 @@ $font_size_mobile:          16px;
 }
 
 //User List page wider
-/**/$user_list_wider:           160px;/**/
-/**/$user_list_item_breakpoint: 992px;
+$user_list_wider:           160px;/**/
+$user_list_item_breakpoint: 992px;
 /**/$user_list_title_color:     $font_color2;
