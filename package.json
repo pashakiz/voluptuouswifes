@@ -1,7 +1,7 @@
 {
-  "name": "VoluptuousWives",
+  "name": "VoluptuousWifes",
   "version": "1.0.0",
-  "description": "http://lubus.ru/d/voluptuouswives/",
+  "description": "http://lubus.ru/d/voluptuouswifes/",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pashakiz/voluptuouswives.git"
+    "url": "git+https://github.com/pashakiz/voluptuouswifes.git"
   },
   "keywords": [],
   "author": "Pavel Kizernis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pashakiz/voluptuouswives/issues"
+    "url": "https://github.com/pashakiz/voluptuouswifes/issues"
   },
-  "homepage": "https://github.com/pashakiz/voluptuouswives#readme",
+  "homepage": "https://github.com/pashakiz/voluptuouswifes#readme",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
