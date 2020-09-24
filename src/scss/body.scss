@@ -16,6 +16,11 @@ body {
   @media (min-width: 1920px) {
     max-width: $container-xxxl + $grid-gutter-width;
   }
+  &.container_wide {
+    @media (min-width: 1920px) {
+      max-width: 1615px;
+    }
+  }
   &.container_firstscreen {
     @media (min-width: 1920px) {
       max-width: 1670px;
@@ -178,30 +183,24 @@ a {
 }
 .link1 {
   font-family: $link_txt_family;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 15px;
-  line-height: 20px;
+  font-weight: 700;
+  font-size: 16px;
   @media (min-width: 768px) {
-    & {
-      font-size: 23px;
-      line-height: 31px;
-    }
+    font-size: 25px;
   }
 }
 .link2 {
   font-family: $font_family2;
   color: $link2_color;
-  font-weight: 400;
-  font-size: 31px;
-  line-height: 45px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 39px;
   &:hover {
     color: $link2_hover_color;
-    opacity: 0.75;
   }
   @media (min-width: 768px) {
-    font-size: 45px;
-    line-height: 85px;
+    font-size: 25px;
+    line-height: 46px;
   }
 }
 .link3 {
