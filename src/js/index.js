@@ -39,7 +39,7 @@ $(function() {
         //slider (Profile gallery) for mobile
         $('.owl-carousel.user-profile-slider').owlCarousel({
             items: 1,
-            dots:false
+            dots:true
         });
 
         //slider (Profile gallery) for desktop
@@ -49,17 +49,11 @@ $(function() {
             items: 4,
             autoWidth: true,
             responsive:{
-                768:{
-                    margin: 5
-                },
-                992:{
-                    margin: 5
-                },
                 1200:{
-                    margin: 10
+                    margin: 12
                 },
-                1410:{
-                    margin: 11
+                1920:{
+                    margin: 14
                 }
             }
         });
@@ -85,7 +79,7 @@ $(function() {
         $('.user-profile-gallery').on('click', '.user-profile-gallery__item', function(){
             let url = $(this).css('background-image');
             url = url.replace('url(','').replace(')','').replace(/\"/gi, "");
-            $('.user-profile-photo').css('background-image', 'url(' + url + ')');;
+            $('.user-profile-photo').css('background-image', 'url(' + url + ')');
         });
 
     });

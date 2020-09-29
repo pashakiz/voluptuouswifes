@@ -1,44 +1,72 @@
 .user-profile-slider-wrap {
-  width: 320px;
-  height: calc(506px + 18px);
   position: relative;
   margin: 0 auto;
-  @media (min-width: 576px) {
-    width: 541px;
-    height: calc(706px + 20px);
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: $body_bg_color;
+    position: absolute;
+    z-index: -1;
+  }
+  @media (min-width: 400px) {
+    width: 320px;
+    max-width: 320px;
+    margin: 60px auto 0;
+    &::before {
+      display: none;
+    }
   }
   @media (min-width: 768px) {
-    width: 608px;
-    height: calc(794px + 20px);
+    width: 557px;
+    height: 699px;
+    max-width: 557px;
   }
-  @media (min-width: 992px) {
-    height: calc(794px + 30px);
+  @media (min-width: 1200px) {
+    width: 478px;
+    max-width: 478px;
+    height: 600px;
+    margin: 0 86px 0 0;
+  }
+  @media (min-width: 1500px) {
+    width: 557px;
+    max-width: 557px;
+    height: 699px;
+    margin: 0 100px 0 0;
   }
 }
 .user-profile-slider {
   width: 100%;
-  height: 506px;
+  height: 490px;
   position: relative;
-  border-radius: 0;
   margin: 0 auto;
+  border-radius: 0 61px;
   overflow: hidden;
-  @media (min-width: 576px) {
-    height: 706px;
-  }
   @media (min-width: 768px) {
-    height: 794px;
+    height: 699px;
+    border-radius: 0 100px;
+  }
+  @media (min-width: 1200px) {
+    height: 600px;
+  }
+  @media (min-width: 1500px) {
+    height: 699px;
   }
   .slide {
     width: 100%;
-    height: 506px;
+    height: 490px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @media (min-width: 576px) {
-      height: 706px;
-    }
     @media (min-width: 768px) {
-      height: 794px;
+      height: 699px;
+    }
+    @media (min-width: 1200px) {
+      height: 600px;
+    }
+    @media (min-width: 1500px) {
+      height: 699px;
     }
   }
   &.owl-carousel {
@@ -51,15 +79,16 @@
     }
     button.owl-dot {
       display: inline-block;
-      width: 6px;
-      height: 6px;
-      background-color: $body_bg_color;
-      border-radius: 6px;
+      width: 14px;
+      height: 2px;
+      background-color: rgba(255,255,255,0.6);
+      border-radius: 0;
+      outline: none;
       +button.owl-dot {
-        margin-left: 6px;
+        margin-left: 7px;
       }
       &.active {
-        background-color: $logo_main_color;
+        background-color: $btn_bg_color;
       }
     }
   }
@@ -74,93 +103,84 @@
 .user-profile-gallery {
   width: 100%;
   flex-wrap: wrap;
-  border: 1px solid #C7C2BA;
-  padding: 20px;
   overflow: hidden;
-  margin-bottom: 63px;
   .user-profile-gallery__item {
-    border-radius: 0;
+    border-radius: 0 30px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
     @media (min-width: 1200px) {
-      width: 110px;
-      height: 93px;
+      width: 104px;
+      height: 69px;
     }
-    //@media (min-width: 1500px) {
-    //  width: 88px;
-    //  height: 88px;
-    //}
+    @media (min-width: 1920px) {
+      width: 121px;
+      height: 80px;
+    }
   }
 }
 
 .compatibility {
   &.compatibility_mb {
-    padding-bottom: 87px;
-    @media (min-width: 992px) {
-      padding-bottom: 80px;
+    padding-bottom: 62px;
+    @media (min-width: 400px) {
+      padding-bottom: 100px;
     }
     @media (min-width: 1200px) {
-      padding-bottom: 60px;
+      padding-bottom: 63px;
     }
   }
   .compatibility__chart {
     +.compatibility__chart {
-      margin-left: 28px;
+      margin-left: 33px;
+      @media (min-width: 768px) {
+        margin-left: 45px;
+      }
       @media (min-width: 992px) {
-        margin-left: 60px;
+        margin-left: 65px;
       }
     }
   }
   .compatibility__progress {
-    width: 60px;
-    height: 20px;
+    width: 63px;
+    height: 17px;
     margin: auto;
-    @media (min-width: 992px) {
-      width: 96px;
-      height: 31px;
+    @media (min-width: 768px) {
+      width: 90px;
+      height: 27px;
     }
-    svg {
-      vertical-align: top;
-    }
-  }
-  .compatibility__title {
-    font-family: $font_family2;
-    color: $font_color2;
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: 14px;
-    @media (min-width: 992px) {
-      text-align: left;
-      font-size: 24px;
-      margin-top: 27px;
-    }
-  }
-
-  &.compatibility_profile {
-    .compatibility__chart {
-      +.compatibility__chart {
-        @media (min-width: 768px) {
-          margin-left: 60px;
+    .progress {
+      width: 100%;
+      height: 17px;
+      background-color: $bg_light_1;
+      border-radius: 0 100px;
+      @media (min-width: 400px) {
+        background-color: #fff;
+      }
+      @media (min-width: 768px) {
+        height: 27px;
+      }
+      .progress-bar {
+        &.progress-bar_bg {
+          background-color: $btn_bg_color;
         }
       }
     }
-    .compatibility__progress {
-      @media (min-width: 768px) {
-        width: 96px;
-        height: 31px;
-      }
-      svg {
-        vertical-align: top;
-      }
+  }
+  .compatibility__title {
+    font-family: $font_family;
+    color: $font_color;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 14px;
+    text-align: center;
+    @media (min-width: 992px) {
+      font-size: 22px;
+      margin-top: 18px;
     }
-    .compatibility__title {
-      @media (min-width: 768px) {
-        text-align: left;
-        font-size: 24px;
-        margin-top: 27px;
-      }
+    @media (min-width: 1200px) {
+      text-align: left;
     }
   }
 
@@ -221,16 +241,6 @@
   }
 }
 
-.go2top {
-  position: relative;
-  top: -280px;
-  @media (min-width: 768px) {
-    top: -380px;
-  }
-  @media (min-width: 1200px) {
-    top: -50px;
-  }
-}
 
 .user-profile-img {
   @media (min-width: 1920px) {
@@ -239,90 +249,103 @@
 }
 
 .user-profile-photo {
+  position: relative;
   @media (min-width: 1200px) {
-    margin-bottom: 37px;
+    margin-bottom: 29px;
+  }
+  .user-profile-btn {
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
   }
 }
 
 .user-profile-info {
-  padding-top: 38px;
+  padding-top: 0;
   margin: 0 auto;
-  @media (min-width: 576px) {
-    width: 541px;
+  @media (min-width: 400px) {
+    width: 320px;
   }
   @media (min-width: 768px) {
-    width: 608px;
+    width: 557px;
   }
   @media (min-width: 1200px) {
     width: auto;
-    max-width: 480px;
+    max-width: 460px;
     padding-top: 0;
     margin: 0 0 0 20px;
+  }
+  .user-profile-info__inner {
+    background-color: $body_bg_color;
+    margin: -60px -15px 0;
+    padding: 99px 15px 0;
+    &::after {
+      display: block;
+      content: '';
+      width: calc(100% + 30px);
+      height: 38px;
+      margin: 0 -15px;
+      background-repeat: no-repeat;
+      background-position: 50% 2px;
+      background-image: url('../img/bg/wave.svg');
+      @media (min-width: 400px) {
+        display: none;
+      }
+    }
+    @media (min-width: 400px) {
+      background-color: transparent;
+      margin: 0;
+      padding: 39px 0 0;
+    }
+    @media (min-width: 1200px) {
+      padding: 0;
+    }
   }
 }
 
 .user-profile-row {
-  color: $font_color2;
-  margin-bottom: 34px;
+  color: $font_color;
+  margin-bottom: 38px;
   text-align: center;
   @media (min-width: 992px) {
     margin-bottom: 80px;
   }
   @media (min-width: 1200px) {
-    display: flex;
-    margin-bottom: 145px;
-    padding-top: 42px;
-    align-items: center;
+    margin-bottom: 63px;
+    padding-top: 25px;
     text-align: left;
   }
   .user-profile-name {
-    font-family: $font_family2;
-    font-weight: 400;
+    font-family: $font_family;
+    font-weight: 700;
     font-size: 23px;
-    margin-bottom: 11px;
-    letter-spacing: 1px;
+    margin-bottom: 4px;
     @media (min-width: 768px) {
-      font-size: 40px;
-      line-height: 51px;
-    }
-    @media (min-width: 992px) {
-      margin: 0 0 20px 0;
-    }
-    @media (min-width: 1200px) {
-      margin: 0 38px 0 0;
-      text-transform: uppercase;
+      font-size: 39px;
+      margin-bottom: 17px;
     }
   }
   .user-profile-loc {
     font-family: $font_family;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
     @media (min-width: 768px) {
-      color: #615F5B;
-      font-size: 20px;
-      line-height: 24px;
+      font-size: 24px;
     }
   }
 }
 .user-profile-title {
-  font-family: $font_family2;
-  color: $font_color2;
-  font-weight: 400;
+  font-family: $font_family;
+  color: $font_color;
+  font-weight: 700;
   font-size: 17px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   @media (min-width: 768px) {
-    font-size: 30px;
-    line-height: 38px;
-    margin-bottom: 34px;
-    letter-spacing: 2px;
-  }
-  @media (min-width: 992px) {
-    margin-bottom: 55px;
-  }
-  @media (min-width: 1200px) {
-    margin-bottom: 34px;
+    font-size: 25px;
+    margin-bottom: 40px;
   }
 }
 
@@ -335,51 +358,10 @@
       line-height: 40px;
     }
   }
-  @media (min-width: 992px) {}
-  @media (min-width: 1200px) {}
   .user-profile-about__title {
-    margin-bottom: 31px;
+    margin-bottom: 24px;
     @media (min-width: 768px) {
-      margin-bottom: 35px;
-    }
-  }
-}
-
-.bg-wave {
-  width: 100%;
-  .bg-wave__inner {
-    background-color: $bg_light_1;
-  }
-  &.bg-wave_userlist {
-    margin-bottom: 60px;
-    @media (min-width: 992px) {
-      margin-bottom: 100px;
-    }
-    @media (min-width: 1200px) {
-      margin-top: 80px;
-      margin-bottom: 125px;
-    }
-  }
-  &.bg-wave_login {
-    padding-top: 90px;
-    @media (min-width: 992px) {
-      padding-top: 15px;
-    }
-  }
-  &.bg-wave_profile {
-    padding-top: 280px;
-    @media (min-width: 768px) {
-      padding-top: 380px;
-    }
-    @media (min-width: 1200px) {
-      position: relative;
-      padding-top: 50px;
-    }
-    .bg-wave__inner {
-      //padding-bottom: 92px;
-      @media (min-width: 1200px) {
-        padding-bottom: 250px;
-      }
+      margin-bottom: 27px;
     }
   }
 }
