@@ -187,54 +187,37 @@
   &.compatibility_list {
     .compatibility__title {
       font-size: 9px;
-      margin-top: 6px;
+      margin-top: 5px;
       @media (min-width: $user_list_item_breakpoint) {
-        margin-top: 24px;
-        font-size: 18px;
+        margin-top: 14px;
+        font-size: 16px;
       }
     }
     .compatibility__progress {
-      width: 32px;
-      height: 12px;
+      width: 36px;
+      height: 9px;
       margin: auto;
       @media (min-width: 992px) {
-        width: 71px;
-        height: 23px;
+        width: 63px;
+        height: 17px;
       }
-    }
-    .compatibility__chart {
-      +.compatibility__chart {
-        margin-left: 9px;
-        @media (min-width: $user_list_item_breakpoint) {
-          margin-left: 18px;
+      .progress {
+        height: 9px;
+        background-color: #fff;
+        border-radius: 0 100px;
+        @media (min-width: 768px) {
+          height: 9px;
+        }
+        @media (min-width: 992px) {
+          height: 17px;
         }
       }
     }
-  }
-
-  &.compatibility_login {
-    .compatibility__title {
-      margin-top: 17px;
-      font-size: 13px;
-      @media (min-width: $user_list_item_breakpoint) {
-        margin-top: 24px;
-        font-size: 18px;
-      }
-    }
-    .compatibility__progress {
-      width: 51px;
-      height: 17px;
-      margin: auto;
-      @media (min-width: 992px) {
-        width: 71px;
-        height: 23px;
-      }
-    }
     .compatibility__chart {
       +.compatibility__chart {
-        margin-left: 10px;
+        margin-left: 11px;
         @media (min-width: $user_list_item_breakpoint) {
-          margin-left: 19px;
+          margin-left: 31px;
         }
       }
     }

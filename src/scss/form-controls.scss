@@ -588,23 +588,17 @@ textarea.form-control {
     }
   }
   &.btn_2 {
-    font-size: 11px;
+    font-size: 10px;
     padding: 8px 10px 6px;
     height: 25px;
-    &::after {
-      width: 25px;
-      height: 25px;
-      right: -29px;
-    }
     &:hover {
       color: #fff;
     }
     @media (min-width: 768px) {
-      letter-spacing: 2px;
+      width: 100%;
     }
     @media (min-width: 992px) {
-      font-size: 21px;
-      letter-spacing: 3px;
+      font-size: 20px;
       padding: 20px 21px;
       height: 62px;
     }
