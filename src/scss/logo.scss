@@ -27,7 +27,7 @@
 
 .logo_main {
   flex-direction: column;
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     flex-direction: row;
   }
   .logo__img {
@@ -37,6 +37,8 @@
     @media (min-width: 992px) {
       width: 46px;
       height: 40px;
+    }
+    @media (min-width: 1200px) {
       margin: 0 24px 0 0;
     }
   }
@@ -44,8 +46,10 @@
     color: $body_bg_color;
     font-size: 22px;
     @media (min-width: 992px) {
-      color: $font_color;
       font-size: 28px;
+    }
+    @media (min-width: 1200px) {
+      color: $font_color;
     }
   }
 }

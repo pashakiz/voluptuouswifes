@@ -15,11 +15,8 @@
     padding: 0 0 94px;
   }
   &.user-list_slider {
-    padding-bottom: 90px;
-    top: -90px;
     @media (min-width: 992px) {
       padding-bottom: 150px;
-      top: -15px;
     }
     @media (min-width: 1200px) {
       padding-bottom: 150px;

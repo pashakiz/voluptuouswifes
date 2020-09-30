@@ -17,13 +17,14 @@ body {
     max-width: $container-xxxl + $grid-gutter-width;
   }
   &.container_wide {
+    @media (min-width: 1200px) {
+      //max-width: 1615px;
+    }
+    @media (min-width: 1500px) {
+      //max-width: 1615px;
+    }
     @media (min-width: 1920px) {
       max-width: 1615px;
-    }
-  }
-  &.container_firstscreen {
-    @media (min-width: 1920px) {
-      max-width: 1670px;
     }
   }
   &.container_index {
@@ -57,27 +58,23 @@ body {
   }
 }
 h1 {
-  font-family: $font_family2;
-  font-weight: 300;
+  font-family: $font_family;
+  font-weight: 700;
   font-size: 36px;
   line-height: 71px;
   color: #fff;
   margin-bottom: 45px;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   @media (min-width: 768px) {
     //font-size: 50px;
     //line-height: 65px;
   }
   @media (min-width: 1200px) {
-    font-weight: 200;
     color: $link2_color;
     font-size: 36px;
     line-height: 60px;
     margin-bottom: 26px;
     text-align: left;
-    letter-spacing: 3px;
   }
   @media (min-width: 1500px) {
     font-size: 48px;
@@ -95,6 +92,33 @@ h1 {
     @media (min-width: 1200px) {
       padding-top: 120px;
       text-align: left;
+    }
+  }
+  &.h1_login {
+    font-size: 35px;
+    line-height: 49px;
+    color: $btn_bg_color;
+    margin: 43px 0 29px;
+    @media (min-width: 768px) {
+      font-size: 78px;
+      line-height: 103px;
+      margin: 98px 0 60px;
+    }
+    @media (min-width: 1200px) {
+      color: $font_color;
+      font-size: 52px;
+      line-height: 56px;
+      margin: 50px 0 39px;
+    }
+    @media (min-width: 1500px) {
+      font-size: 68px;
+      line-height: 80px;
+      margin: 100px 0 39px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 78px;
+      line-height: 103px;
+      margin: 135px 0 39px;
     }
   }
 }
@@ -119,28 +143,17 @@ h2 {
     margin-bottom: 90px;
   }
   &.h2_login {
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 60px;
-    color: #fff;
-    text-align: center;
+    font-size: 32px;
+    margin-bottom: 42px;
+    margin-top: 60px;
     @media (min-width: 768px) {
-      font-size: 64px;
-      line-height: 75px;
-      margin-bottom: 80px;
-      text-align: left;
+      font-size: 46px;
+      margin-bottom: 60px;
     }
     @media (min-width: 1200px) {
-      color: $font_color2;
-      font-size: 35px;
-      line-height: 42px;
-      margin-bottom: 15px;
-      letter-spacing: 3px;
-    }
-    @media (min-width: 1500px) {
-      font-size: 45px;
-      line-height: 57px;
-      margin-bottom: 28px;
+      font-size: 70px;
+      margin-bottom: 125px;
+      margin-top: 72px;
     }
   }
 }
@@ -204,18 +217,18 @@ a {
   }
 }
 .link3 {
-  font-family: $link_txt_family;
+  font-family: $font_family;
   font-weight: 300;
   font-size: 15px;
-  color: #fff;
+  color: $link3_color;
   &:hover {
     color: $link3_hover_color;
   }
   @media (min-width: 1200px) {
-    font-size: 18px;
-    color: $link3_color;
+    font-size: 20px;
+    color: #3A5954;
     &:hover {
-      color: $btn_hover_bg_color;
+      color: $link3_hover_color;
     }
   }
 }

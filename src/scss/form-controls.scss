@@ -53,40 +53,33 @@ body textarea:required:valid {
   }
   &.form-control_header {
     border: none;
-    color: #564F4C;
-    padding: 22px 27px 19px;
-    background-color: rgba(255,247,235,0.7);
+    color: #4B6661;
+    padding: 17px 27px;
+    background-color: rgba(244,240,236,0.88);
+    text-align: center;
     &:hover {
-      background-color: rgba(255,247,235,0.8);
-      color: $input_txt_color;
+      background-color: $bg_light_2;
+      color: $font_color;
     }
     &:focus {
       box-shadow: none;
-      background-color: rgba(255,247,235,0.8);
-      color: $input_txt_color;
+      background-color: $bg_light_2;
+      color: $font_color;
     }
     @media (min-width: 768px) {
       padding: 25px 42px;
-      font-size: 20px;
+      font-size: 22px;
     }
     @media (min-width: 1200px) {
-      background-color: $input_bg;
+      background-color: $bg_light_2;
       border: $input_border;
-      padding: 20px 25px;
-      font-size: 18px;
-      &:hover {
-        background-color: $input_hover_bg;
-        color: $input_hover_txt_color;
-      }
-      &:focus {
-        box-shadow: none;
-        background-color: $input_hover_bg;
-        color: $input_hover_txt_color;
-      }
+      padding: 25px 42px;
+      font-size: 22px;
+      line-height: 39px;
     }
     @media (min-width: 1500px) {
       padding: 25px 42px;
-      font-size: 21px;
+      font-size: 22px;
     }
   }
 }
@@ -95,14 +88,13 @@ input.form-control {
   @media (min-width: 768px) {
     height: 80px;
   }
-  @media (min-width: 1200px) {
-    &.form-control_header {
-      height: 52px;
+  &.form-control_header {
+    height: 57px;
+    @media (min-width: 1200px) {
+      height: 73px;
     }
-  }
-  @media (min-width: 1500px) {
-    &.form-control_header {
-      height: 76px;
+    @media (min-width: 1500px) {
+      height: 91px;
     }
   }
 }
@@ -141,16 +133,19 @@ textarea.form-control {
   }
 }
 .form-group_login {
-  margin-bottom: 15px;
-}
-.form-group_up-login {
-  margin-top: 29px;
-  margin-bottom: 0;
+  margin-bottom: 13px;
   @media (min-width: 1200px) {
-    margin-top: 12px;
+    margin-top: 20px;
   }
   @media (min-width: 1500px) {
-    margin-top: 26px;
+    margin-top: 32px;
+  }
+}
+.form-group_up-login {
+  margin-top: 18px;
+  margin-bottom: 0;
+  @media (min-width: 1500px) {
+    margin-top: 34px;
   }
 }
 .form-group_input {
@@ -467,7 +462,7 @@ textarea.form-control {
         background-color: $body_bg_color;
       }
       &::after {
-        background-color: $btn_bg_color;
+        background-color: #CDCCCD;
       }
     }
     .custom-control-input {
@@ -477,7 +472,7 @@ textarea.form-control {
             background-color: $body_bg_color;
           }
           &::after {
-            background-color: $btn_hover_bg_color;
+            background-color: $btn_bg_color;
           }
         }
       }
@@ -581,10 +576,10 @@ textarea.form-control {
       padding: 20px 21px;
       height: 62px;
     }
-    @media (min-width: 1920px) {
-      font-size: 30px;
+    @media (min-width: 1500px) {
+      font-size: 28px;
       padding: 31px 40px;
-      height: 94px;
+      height: 91px;
     }
   }
   &.btn_2 {
