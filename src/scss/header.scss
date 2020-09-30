@@ -201,6 +201,20 @@
       margin-bottom: 54px;
     }
   }
+  &.header__row_index {
+    padding: 112px 0 0;
+    margin-bottom: 0;
+    @media (min-width: 1200px) {
+      padding: 78px 0 0;
+      margin-bottom: 10px;
+    }
+    @media (min-width: 1500px) {
+      margin-bottom: 54px;
+    }
+    @media (min-width: 1920px) {
+      margin-bottom: 54px;
+    }
+  }
 }
 
 .header__nav-toggle {
@@ -397,7 +411,7 @@
 
 .header__form {
   width: 100%;
-  margin-bottom: 63px;
+  margin-bottom: 92px;
   @media (min-width: 768px) {
     margin: 0 auto 63px;
   }
@@ -439,9 +453,7 @@
 
 .collage__img_xs {
   display: block;
-  width: 113%;
-  position: relative;
-  left: -8%;
+  width: 100%;
   @media (min-width: 768px) {
     position: static;
     width: 100%;
